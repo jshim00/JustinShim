@@ -1,0 +1,72 @@
+body{
+    align-items: center;
+    text-align: center;
+    background-color: hsl(0, 0%, 89%);
+    display: flex;
+    flex-direction: column;
+}
+#top{
+    margin: 25px;
+}
+#input_city{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: hsl(0, 4%, 69%);
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(0, 1%, 29%);
+}
+#fetchData{
+    background-color: hsl(120, 60%, 70%);
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    margin-left: 15px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 2em;
+    cursor: pointer;
+}
+#fetchData:hover{
+    background-color: white;
+    color: hsl(120, 52%, 79%);
+}
+#fetchData:active{
+    background-color: hsl(120, 60%, 80%);
+}
+#card{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.5rem;
+    min-width: 30rem;
+    background: linear-gradient(hsl(210, 87%, 56%), hsl(40, 87%, 64%));
+    border-radius: 10px;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    display: none;
+}
+.temperature{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 20px 0px;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+.humidity{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: .5em;
+    padding-top: 30px
+}
+.description{
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+.emoji{
+    font-size: 2.4em;
+    padding-top: 20px;
+}
+.validate_input{
+    font-size: .5em;
+}

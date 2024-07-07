@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="top">
+        <input id="input_city" placeholder="Enter City" type="text">
+        <button id="fetchData" onclick="weatherApp()">Get Weather</button>
+    </div>
+    <div id="card">
+        <div class="temperature">Miami</div>
+        <div class="temperature">90°F</div>
+        <div class="description">Clear Skies</div>
+        <div class="humidity">Humidity: 75%</div>
+        <div class="emoji">☀️</div>
+        <div class="validate_input">Please enter a city</div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
