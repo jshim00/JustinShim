@@ -16,8 +16,8 @@ async function weatherApp(){
             displayError(error);
         }
     } else{
-        card.style.background = 'white';
-        displayError("Please enter a city");
+        // window.alert('Please enter a city');
+        displayError("Please enter a city")
     }
 }
 
@@ -103,7 +103,7 @@ function getWeatherEmoji(id){
 function displayError(message){
     const errorDisplay = document.createElement("p");
     errorDisplay.textContent = message; 
-    errorDisplay.classList.add("validate_input"); 
+    errorDisplay.classList.add("description"); 
 
     card.textContent = ""; // Resets card from previous weather searches
     card.style.display = "block";
