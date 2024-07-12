@@ -13,6 +13,11 @@
     position: sticky;
     top: 0;
     font-family: "Lato", sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.navbar.dark-mode {
+    background-color: hsl(239, 58%, 17%);
 }
 
 .navbar_container {
@@ -34,10 +39,11 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    transition: color 0.5s ease;
 }
 
-.fa-gem {
-    margin-right: 0.5rem;
+#navbar_logo.dark-mode {
+    color: hsl(63, 75%, 73%);
 }
 
 .navbar_menu {
@@ -57,36 +63,47 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 20px;
     height: 100%;
+    transition: color 0.5s ease;
+}
+
+.navbar_links.dark-mode {
+    color: hsl(63, 75%, 73%);
 }
 
 .navbar_btn {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     align-items: center;
-    padding: 0 1rem;
-    width: 100%;
+    /* padding: 0 1rem; */
+    /* width: 100%; */
 }
 
-.button {
+#moon{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
     height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #f77062;
-    color: #fff;
+    width: 40px;
+    border-style: solid;
+    border-color: hsl(218, 90%, 56%);
+    border-radius: 9px;
+    transition: background-color 0.4s ease, border-color 0.4s ease; 
 }
-
-.button:hover {
-    background: #4837ff;
-    transition: all 0.3s ease;
+#moon:hover{
+    background: hsl(218, 87%, 68%);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+#moon.dark-mode{
+    border-color: hsl(63, 75%, 73%);
+    background-color: hsl(239, 58%, 17%);
+}
+#moon.dark-mode:hover{
+    background-color: hsl(63, 71%, 85%);
+    transform: rotate(360deg);
 }
 
 .navbar_links:hover {
@@ -97,8 +114,12 @@
 /* Middle Section styling */
 h1 {
     font-size: 3.4rem;
+    color: hsl(218, 90%, 56%);
+    transition: color 0.5s ease;
 }
-
+h1.dark-mode {
+    color: hsl(63, 75%, 73%);
+}
 .sections{
     background-color: hsl(0, 0%, 89%);
     text-align: center;
@@ -107,11 +128,20 @@ h1 {
     font-family: "Lato", sans-serif;
     padding-top: 75px;
     padding-bottom: 60px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.sections.dark-mode {
+    background-color: hsl(239, 58%, 17%);
+    color: hsl(63, 75%, 73%);
+}
+#aboutme p{
+    text-align: center;
 }
 
 .sections p{
     font-size: 1.5rem;
     max-width: 50rem;
+    text-align: left;
     /* Important */
     margin: 0 auto;
     width: 60%;
@@ -120,10 +150,18 @@ h1 {
 
 .sections button{
     border: none;
+    background-color: hsl(0, 0%, 89%);
     color: hsl(218, 90%, 56%);
     padding: 25px;
+    border-style: solid;
+    border-color: hsl(218, 90%, 56%);
     border-radius: 8px;
     font-size: 1.2rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.sections button.dark-mode {
+    background-color: hsl(239, 58%, 17%);
+    color: hsl(63, 75%, 73%);
 }
 
 .sections button:hover{
@@ -134,14 +172,11 @@ h1 {
 }
 
 .projects{
-    background-color: hsl(0, 3%, 79%);
     color: blue;
     font-size: 1.2rem;
 }
 
 .projects_container{
-    text-align: center; 
-
     /* Important */
     margin: 0 auto;
     width: 75%;
@@ -151,12 +186,10 @@ h1 {
 .project{
     margin-top: 30px;
     margin-bottom: 20px;
-    text-align: center;
     font-size: 1.2rem;
     border-color: blue;
     border-radius: 10px;
     border-style: solid;
-    justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -168,7 +201,15 @@ h1 {
 .project a{
     text-decoration: none;
     color: hsl(218, 90%, 56%);
+}
 
+.project_pic{
+    border-style: solid;
+    border-width: 4px;
+    border-color: hsl(34, 56%, 84%);
+    border-radius: 8px;
+    margin-bottom: 10px; 
+    width: 60%;
 }
 
 .project a:hover{
@@ -182,6 +223,12 @@ h1 {
 /* Footer Styling */
 .footer_container{
     background-color: hsl(0, 0%, 89%);
+    transition: background-color 0.5s ease;
+    border-style: none;
+}
+
+.footer_container.dark-mode {
+    background-color: hsl(239, 58%, 17%);
 }
 
 .social_icons{
@@ -197,6 +244,11 @@ h1 {
 
 .social_icons i{
     color: hsl(218, 90%, 56%);
+    transition: color 0.5s ease;
+}
+
+.social_icons i.dark-mode {
+    color: hsl(63, 75%, 73%);
 }
 
 .social_icons i:hover{
@@ -211,6 +263,10 @@ h1 {
     display: flex;
     padding-left: 50px;
     font-family: "Lato", sans-serif;
+    transition: color 0.5s ease;
+}
+.copyright.dark-mode {
+    color: hsl(63, 75%, 73%);
 }
 
 .img_container {

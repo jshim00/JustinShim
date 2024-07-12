@@ -21,11 +21,6 @@
     <nav class="navbar">
         <div class="navbar_container">
             <a href="index.html" id="navbar_logo"><strong>Justin Shim</strong></a>
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
             <ul class="navbar_menu">
                 <li class="navbar_item">
                     <a href="index.html" class="navbar_links">Home</a>
@@ -39,9 +34,12 @@
                 <li class="navbar_item">
                     <a href="javascript:void(0);" class="navbar_links" onclick="scrollToFooter()">Connect</a>
                 </li>
-                <!-- <li class="navbar_btn">
-                    <a href="javascript:void(0);" class="button" onclick="swithColors()">Dark Mode</a>
-                </li> -->
+                <li class="navbar_btn">
+                    <!-- <a href="javascript:void(0);" class="button" onclick="switchColors()">Dark Mode</a> -->
+                    <button class="footer_container" onclick="switchColors()">
+                        <img src="images/mode_icon.png" alt="mode" id="moon">
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -53,15 +51,13 @@
             <img src="images/me.jpg" alt="Me eating food" id="food">
         </div>
         <br>
-        <!-- <p>I am a student at the University of Maryland studying Computer Science and General Biology.</p> -->
-        <p>I am passionate about Computer Science, meeting new people, and dogs. Especially dogs. </p>
+        <p>I am passionate about Frontend development, meeting new people, and dogs. Especially dogs. </p>
     </div>
 
     <div class="sections" id="resume">
         <h1>Resume</h1>
         <br>
         <button onclick="window.open('images/resume.pdf', '_blank')">Download Resume</button>
-
     </div>
 
     <div class="sections" id="projects">
@@ -72,25 +68,26 @@
             <div class="project" id="weatherApp">
                 <a href="https://jshim00.github.io/JustinShim/weatherApp/index.html" target="_blank"><h1>Weather App</h1></a>
                 <br>
-                <p>- Developed a responsive web application using HTML, CSS, and JavaScript to display current weather
+                <img src="images/example.png" alt="weather example" class="project_pic">
+                <p>Developed a responsive web application using HTML, CSS, and JavaScript to display current weather
                     information for any city</p><br>
-                <p>- Used the OpenWeatherMap API to fetch and display real-time weather data, including temperature,
+                <p>Used the OpenWeatherMap API to fetch and display real-time weather data, including temperature,
                     humidity, and weather conditions</p>
             </div>
 
+            <!-- NIH Internship Project -->
             <div class="project" id="poster">
                 <a href="images/poster.pdf" target="_blank"><h1>RNA Sequencing Pipeline</h1></a>
                 <br>
+                <img src="images/diagram.png" alt="seq diagram" class="project_pic">
                 <p>
-                    - Developed an automated pipeline in Bash for downstream analysis of sequencing data, improving the
+                    Developed an automated pipeline in Bash for downstream analysis of sequencing data, improving the
                     efficiency and reliability of sequencing analysis for future research efforts
                 </p><br>
                 <p> 
-                    - Implemented a Python script to ensure data quality by applying filtering criteria, and an R script to
+                    Implemented a Python script to ensure data quality by applying filtering criteria, and an R script to
                     convert Ensemble gene IDs to gene symbols, improving the pipeline’s functionality
-                </p><br>
-                <p>- Used various computational biology packages to analyze clinical outcomes</p>
-                <br>
+                </p>
             </div>
         </div>
 
