@@ -105,7 +105,6 @@
     background-color: hsl(63, 71%, 85%);
     transform: rotate(360deg);
 }
-
 .navbar_links:hover {
     transition: all 0.3s ease;
     text-decoration: underline;
@@ -226,11 +225,9 @@ h1.dark-mode {
     transition: background-color 0.5s ease;
     border-style: none;
 }
-
 .footer_container.dark-mode {
     background-color: hsl(239, 58%, 17%);
 }
-
 .social_icons{
     text-align: center;
     font-size: 3rem;
@@ -246,15 +243,15 @@ h1.dark-mode {
     color: hsl(218, 90%, 56%);
     transition: color 0.5s ease;
 }
-
-.social_icons i.dark-mode {
-    color: hsl(63, 75%, 73%);
-}
-
 .social_icons i:hover{
     color: hsl(218, 90%, 67%);
 }
-
+.social_icons i.dark-mode {
+    color: hsl(63, 75%, 73%);
+}
+.social_icons i.dark-mode:hover {
+    color: hsl(62, 67%, 86%);
+}
 .copyright{
     text-align: left;
     font-size: 1.5rem;

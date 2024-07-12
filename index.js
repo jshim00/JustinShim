@@ -11,10 +11,7 @@ function scrollToFooter() {
 }
 
 // Dark mode
-let isDarkMode = false; 
-
 function switchColors(){
-    isDarkMode = !isDarkMode;
 
     const navbar = document.querySelector(".navbar"); 
     const logo = document.getElementById("navbar_logo");
@@ -25,7 +22,7 @@ function switchColors(){
     const headers = document.querySelectorAll("h1"); 
     const download = document.querySelector(".sections button");
 
-    const bottom = document.querySelector(".footer_container");
+    const bottom = document.querySelectorAll(".footer_container");
     const socials = document.querySelectorAll(".social_icons i");
     const copyright = document.querySelector(".copyright");
 
@@ -36,7 +33,7 @@ function switchColors(){
     
     sections.forEach(section => section.classList.toggle("dark-mode"));
     headers.forEach(header => header.classList.toggle("dark-mode"));
-    bottom.classList.toggle("dark-mode");
+    bottom.forEach(elt => elt.classList.toggle("dark-mode"));
 
     socials.forEach(social => social.classList.toggle("dark-mode"));
     download.classList.toggle("dark-mode");
