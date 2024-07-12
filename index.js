@@ -1,3 +1,7 @@
+function scrollToAboutMe(){
+    document.getElementById("aboutme").scrollIntoView({ behavior: 'smooth' });
+}
+
 function scrollToResume() {
     document.getElementById("resume").scrollIntoView({ behavior: 'smooth' });
 }
