@@ -25,6 +25,7 @@ function switchColors(){
     const sections = document.querySelectorAll(".sections");
     const headers = document.querySelectorAll("h1"); 
     const download = document.querySelector(".sections button");
+    const titles = document.querySelectorAll(".project a"); 
 
     const bottom = document.querySelectorAll(".footer_container");
     const socials = document.querySelectorAll(".social_icons i");
@@ -32,12 +33,13 @@ function switchColors(){
 
     navbar.classList.toggle("dark-mode");
     logo.classList.toggle("dark-mode");
-    links.forEach(link => link.classList.toggle("dark-mode"));
+    links.forEach(link => link.classList.toggle("dark-mode")); //iterates through nodelist
     moon.classList.toggle("dark-mode");
     
     sections.forEach(section => section.classList.toggle("dark-mode"));
     headers.forEach(header => header.classList.toggle("dark-mode"));
     bottom.forEach(elt => elt.classList.toggle("dark-mode"));
+    titles.forEach(elt => elt.classList.toggle("dark-mode")); 
 
     socials.forEach(social => social.classList.toggle("dark-mode"));
     download.classList.toggle("dark-mode");
