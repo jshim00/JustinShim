@@ -255,12 +255,11 @@ h1.dark-mode {
     color: hsl(62, 67%, 86%);
 }
 .copyright{
-    text-align: left;
+    text-align: center;
     font-size: 1.5rem;
     color: hsl(218, 90%, 56%);
     padding-top: 50px;
-    display: flex;
-    padding-left: 50px;
+    padding-bottom: 25px;
     font-family: "Lato", sans-serif;
     transition: color 0.5s ease;
 }

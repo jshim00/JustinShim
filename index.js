@@ -45,3 +45,5 @@ function switchColors(){
     download.classList.toggle("dark-mode");
     copyright.classList.toggle("dark-mode");
 }
+
+document.getElementById("year").textContent = new Date().getFullYear();
